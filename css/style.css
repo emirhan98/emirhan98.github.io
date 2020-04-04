@@ -8,4 +8,6 @@
 .section1 {
     font-family: var(--myFont-);
     color: var(--myColor);
+    background: #15cc65;
+    border: 1px solid blue;
 }
