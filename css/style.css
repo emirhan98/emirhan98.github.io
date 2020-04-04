@@ -98,3 +98,43 @@ body {
     max-height: 1400px;
     line-height: 60px;
 }
+
+.flexbox2 {
+    width: 100%;
+    min-height: 1000px;
+    margin-bottom: 50px;
+    margin-top: 50px;
+    justify-content: center;
+    text-align: center;
+}
+
+
+/** FOOTER OPTIMIZASION */
+
+.citeEnd {
+    text-align: center;
+}
+
+.footerLinks {
+    justify-content: center;
+    margin-left: 30px;
+    right: 10%;
+    text-transform: uppercase;
+}
+
+.footerLinks ul {
+    list-style-type: none;
+    display: inline-block;
+}
+
+.footerLinks ul li {
+    margin-left: 30px;
+    padding-left: 40px;
+    justify-content: space-evenly;
+    background-color: transparent;
+}
+
+.footerLinks ul li a {
+    margin-left: 20px;
+    background-color: transparent;
+}
