@@ -1,14 +1,11 @@
-p::before {
-    content: "play";
-    background: red;
-    display: inline-block;
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500&family=Raleway&display=swap');
+:root {
+    --myFont-: Oswald, Raleway, Arial;
+    --myColor: rgba(4, 245, 255, 0.6);
+    --myTransition: all .5s ease;
 }
 
-p::after {
-    content: "game";
-    color: black;
-    display: inline-block;
-    transition-property: all;
-    transition-duration: .3s;
-    transition: all 3s ease;
+.section1 {
+    font-family: var(--myFont-);
+    color: var(--myColor);
 }
