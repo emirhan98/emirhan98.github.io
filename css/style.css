@@ -1,13 +1,100 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500&family=Raleway&display=swap');
 :root {
     --myFont-: Oswald, Raleway, Arial;
-    --myColor: rgba(4, 245, 255, 0.6);
+    --myColor-: rgba(4, 245, 255, 0.6);
+    -mySecondary-Color-: #3c3c3c;
     --myTransition: all .5s ease;
 }
 
-.section1 {
+* {
+    margin: auto;
+    padding: auto;
+    box-sizing: border-box;
     font-family: var(--myFont-);
-    color: var(--myColor);
-    background: #15cc65;
-    border: 1px solid blue;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: var(--myColor-);
+    font-family: var(--myFont-);
+    font-size: 25px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+body {
+    background: #ff0000;
+    text-indent: 2rem;
+    width: 100%;
+    color: #fff;
+}
+
+.flexbox {
+    max-width: 1400px;
+    height: 900px;
+    display: flex;
+    flex-direction: row;
+    background: rgba(35, 40, 70, 0.7);
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.fleximage {
+    size: 500px;
+    background-size: cover;
+    margin-bottom: 0;
+    width: 100%;
+    justify-self: flex-end;
+}
+
+.flexitem1 {
+    text-transform: uppercase;
+    font-weight: 800;
+    justify-self: top;
+    font-size: 60px;
+    width: 100%;
+    margin-bottom: 40px;
+    align-self: top;
+}
+
+.navbar {
+    top: 0;
+    right: 10;
+    width: 100%;
+    align-items: flex-start;
+}
+
+.navbar ul {
+    list-style-type: none;
+}
+
+.navbar ul li {
+    display: inline-block;
+    padding: 15px;
+    margin-left: 15px;
+}
+
+.navbar ul li a {
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 25px;
+    transition: var(--myTransition);
+}
+
+.navbar ul li:hover a {
+    color: #fff;
+}
+
+.container {
+    margin: 0em;
+    text-align: center;
+    width: 100%;
+    min-width: 600px;
+    max-height: 1400px;
+    line-height: 60px;
 }
