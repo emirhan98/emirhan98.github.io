@@ -1,202 +1,45 @@
-@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500&family=Raleway&display=swap');
-:root {
-    --myFont-: Oswald, Raleway, Arial;
-    --myColor-: rgba(4, 245, 255, 0.6);
-    -mySecondary-Color-: #3c3c3c;
-    --myTransition: all .5s ease;
+body{font-family: 'Sen', sans-serif;}
+
+.navbar{
+    border-bottom: #049099 1px solid;
+}
+.navbar-brand{
+    font-size: 24px;
+    color: #000000 !important;
 }
 
-* {
-    margin: auto;
-    padding: auto;
-    box-sizing: border-box;
-    font-family: var(--myFont-);
+.nav-link{
+    color: black !important;
+    text-transform: uppercase;
+    transition: color .5s ease !important;
+
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    color: var(--myColor-);
-    font-family: var(--myFont-);
-    font-size: 25px;
-    font-weight: 500;
-    margin-bottom: 15px;
-    text-align: center;
+.nav-link:hover{
+    color: white !important;
 }
 
-@media (max-width:760px) {
-    .flexbox {
-        flex-direction: column-reverse;
-    }
+#headerSection{
+    background: url("../images/andrej-lisakov-3A4XZUopCJA-unsplash.jpg") no-repeat center center fixed !important;
+    background-size: cover !important ;
+    height: 100vh !important ;
+}
+#headerSection .overlay{
+    background:rgba(0, 0, 0, .6);
+}
+#headerSection .row{
+    height: 100vh;
 }
 
-body {
-    width: 100%;
-    color: #fff;
-    letter-spacing: 4px;
-    background: black;
+#headerSection span{
+    color: black;
 }
 
-.flexbox {
-    display: flex;
-    background-color: red;
-    flex-direction: row-reverse;
-    justify-content: center;
-    flex-wrap: wrap;
+.btn-outline-primary {
+    padding-left: 30px !important;
+    padding-right: 30px !important;
+    border-radius: 0;
+    cursor: pointer !important;
+    margin-top:15px;
 }
 
-.container {
-    padding: 20px;
-    margin: 20px;
-    flex: 4;
-    display: flex;
-    flex-basis: 800px;
-    height: 500px;
-    flex-direction: column-reverse;
-    height: 100%;
-    width: 1500px;
-    text-align: center;
-    justify-content: center;
-}
-
-.flexh1 {
-    order: 5;
-    margin-right: 50px;
-    color: var(--myColor-);
-    align-self: center;
-    justify-self: flex-start;
-}
-
-.flexP {
-    order: 3;
-    flex-grow: 1;
-    margin-left: 30px;
-}
-
-.navbar {
-    padding: 20px;
-    margin: 20px;
-    flex: 2;
-}
-
-.navbar ul {
-    list-style-type: none;
-}
-
-.navbar ul li {
-    margin-top: 5px;
-    font-weight: bold;
-    font-size: 40px;
-    border: 1px solid #0000ff;
-    border-radius: 40%;
-    border-width: 13px;
-    text-align: center;
-    padding: 15px;
-    background-color: #000000;
-    transition: var(--myTransition);
-}
-
-.navbar ul li a {
-    text-decoration: none;
-    color: #ffffff;
-    transition: var(--myTransition);
-}
-
-.navbar ul li:hover {
-    background: whitesmoke;
-}
-
-.navbar ul li:hover a {
-    color: red;
-}
-
-.flexbox2 {
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
-    background-color: blue;
-    margin-top: 35px;
-    padding: 50px 40px;
-    width: 1500px;
-}
-
-.mainSection {
-    display: flex;
-    padding: 25px 35px;
-    width: 100%;
-    margin-right: 30px;
-}
-
-.mainText {
-    display: flex;
-    flex-direction: row-reverse;
-    text-align: center;
-    margin-right: 40px;
-    justify-content: center;
-    height: 100%;
-    height: 500px;
-}
-
-.mainText p {
-    margin-left: 20px;
-}
-
-.mainText h1 {
-    flex: 1;
-    order: 1;
-    transform: rotate(-90deg);
-    top: 50%;
-}
-
-
-/** FOOTER OPTIMIZASION */
-
-.citeEnd {}
-
-.footerLinks {
-    display: flex;
-    background: black;
-    margin: auto;
-    width: 100%;
-    flex-direction: row;
-    text-align: center;
-}
-
-.footerLinks ul {
-    display: flex;
-    flex-direction: row;
-    list-style-type: none;
-    padding: 50px;
-}
-
-.footerLinks li {
-    padding: 50px;
-    font-size: 50px;
-}
-
-.footerLinks ul li a {
-    color: white;
-}
-
-.footerLinks ul li i {
-    color: white;
-}
-
-.footerLinks ul li:nth-child(1) a i:hover {
-    color: blue;
-}
-
-.footerLinks ul li:nth-child(2) a i:hover {
-    color: rgba(144, 169, 194, 0.6);
-}
-
-.footerLinks ul li:nth-child(3) a i:hover {
-    color: rgb(255, 5, 5);
-}
-
-.footerInfo {
-    align-self: center;
-}
