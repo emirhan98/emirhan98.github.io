@@ -1,3 +1,9 @@
+h3{
+    font-size: 18px;
+    font-weight: 400;
+    
+}
+/*HOME*/
 body{font-family: 'Sen', sans-serif;}
 
 .navbar{
@@ -41,5 +47,19 @@ body{font-family: 'Sen', sans-serif;}
     border-radius: 0;
     cursor: pointer !important;
     margin-top:15px;
+}
+
+/* FEATURES */
+
+#features .fab{
+    font-size: 50px;
+}
+.feature-top{
+    transition: color .5s ease
+}
+
+.feature-top:hover{
+    color: #049099;
+    cursor: pointer;
 }
 
